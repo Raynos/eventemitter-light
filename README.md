@@ -29,8 +29,7 @@ It's like EventEmitter build into node.
 
 The only difference is that it supports namespaces
 
-so 
-
+```javascript
 ee.on('foo.namespace', works);
 ee.on('*.namespace', works);
 ee.on('foo.*', works);
@@ -39,6 +38,7 @@ ee.emit('foo.namespace');
 // works 3 times
 
 function works() { console.log('works'); }
+```
 
 ## Installation
 
