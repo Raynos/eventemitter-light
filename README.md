@@ -12,7 +12,7 @@ var EventEmitter = require("eventemitter-light");
 var ee = Object.create(EventEmitter).constructor();
 
 ee.on('foo.namespaces', logFoo);
-ee.emit('*.namespaces');
+ee.emit('foo.namespaces');
 
 function logFoo() {
 	console.log('foo');
@@ -27,18 +27,21 @@ EventEmitter2 is 2kb. That's far too much. EE-light is a sensible 400bytes.
 
 It's like EventEmitter build into node.
 
-The only difference is that it supports namespaces
-
 ```javascript
-ee.on('foo.namespace', works);
-ee.on('*.namespace', works);
-ee.on('foo.*', works);
+ee.on("foo", works)
 
-ee.emit('foo.namespace');
-// works 3 times
+ee.emit('foo');
+// works
 
 function works() { console.log('works'); }
 ```
+
+### Supported methods
+
+ - on
+ - emit
+ - removeListener
+ - once
 
 ## Installation
 
