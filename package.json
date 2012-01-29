@@ -1,6 +1,6 @@
 {
     "name": "eventemitter-light", 
-    "version": "0.2.0-alpha", 
+    "version": "0.2.0", 
     "description": "Tiny event emitter", 
     "keywords": ["eventemitter", "ee", "events"], 
     "author": "Jake Verbaten <raynos2@gmail.com>",

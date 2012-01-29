@@ -21,7 +21,7 @@ function logFoo() {
 
 ## Motivation
 
-EventEmitter2 is 2kb. That's far too much. EE-light is a sensible 400bytes. (0.2 is only 250bytes)
+EventEmitter2 is 2kb. That's far too much. EE-light is a sensible 250bytes
 
 ## Documentation
 
