@@ -48,6 +48,12 @@ suite('EventEmitter', function () {
         ee.emit('ev', 42);
     });
 
+    test("EventEmitter.emit on no listeners", function () {
+        var ee = instance();
+        
+        ee.emit("ev"); 
+    });
+
     test('EventEmitter.once', function () {
         var ee = instance(),
             counter = 0;
